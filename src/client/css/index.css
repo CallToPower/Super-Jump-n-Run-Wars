@@ -1,0 +1,96 @@
+body {
+    min-width: 900px;
+}
+
+.button_joinGame {
+    -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
+    background: -moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+    background-color: #ededed;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    color: #777777;
+    font-family: arial;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 8px 27px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0px #ffffff;
+}
+
+.button_joinGame:hover {
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
+    background: -moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+    background-color: #dfdfdf;
+}
+
+.button_joinGame:active {
+    position: relative;
+    top: 1px;
+}
+
+#keyTable {
+    text-align: center;
+}
+
+#mainContainer {
+    display: none;
+}
+
+#main {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#div_canvas {
+    width: 500px;
+    height: 400px;
+    background: #000;
+    float: left;
+}
+
+#div_chat {
+    width: 295px;
+    background: #000000;
+    height: 400px;
+    margin-left: 505px;
+}
+
+#chat_window {
+    text-align: left;
+    color: #FFFFFF;
+    height: 380px;
+    overflow: scroll;
+}
+
+#chat_textField {
+    height: 20px;
+    background: #FFFFFF;
+}
+
+.noJSAlert-outer {
+    background-color: #FFFFFF;
+    border: 1px solid red;
+    width: 530px;
+    margin: 20px;
+    color: #000000;
+}
+
+.noJSAlert-inner-up {
+    text-align: left;
+    background: red;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.noJSAlert-inner-down {
+    padding: 10px;
+}

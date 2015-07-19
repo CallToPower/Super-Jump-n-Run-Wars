@@ -1,0 +1,108 @@
+<!--
+Super Jump And Run Wars
+Copyright (C) 2011-2012 Denis Meyer, CallToPower Software
+
+This software is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License version 3, 29 June 2007, as published by the Free Software Foundation.
+
+This software is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public
+License along with this library; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>
+			Super Jump'n'Run Wars
+		</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="/socket.io/socket.io.js"></script>
+		<script type="text/javascript" src="js/jquery/jquery.js"></script>
+		<script type="text/javascript" src="js/variables.js"></script>
+		<script type="text/javascript" src="js/strings.js"></script>
+		<script type="text/javascript" src="js/helper.js"></script>
+		<script type="text/javascript" src="js/game/variables.js"></script>
+		<script type="text/javascript" src="js/game/helper.js"></script>
+		<script type="text/javascript" src="js/game/sound.js"></script>
+		<script type="text/javascript" src="js/game/player.js"></script>
+		<script type="text/javascript" src="js/game/background.js"></script>
+		<script type="text/javascript" src="js/game/tile.js"></script>
+		<script type="text/javascript" src="js/game/assetManager.js"></script>
+		<script type="text/javascript" src="js/game/gameEngine.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+		<h1>
+			Super Jump'n'Run Wars
+		</h1>
+		<noscript>
+	        <center>
+	            <div class="noJSAlert-outer">
+	                <div class="noJSAlert-inner-up">
+	                    &nbsp;JavaScript is disabled
+	                </div>
+	                <div class="noJSAlert-inner-down">
+	                    JavaScript is turned off in your web browser, so this site won't work properly! <br />
+	                    <strong>
+	                        Please turn JavaScript on to use this site, then refresh the page.
+	                    </strong>
+	                </div>
+	            </div>
+	        </center>
+	    </noscript>	
+		<center>
+			<div id="mainContainer">
+				<div id="main">
+					<div id="div_canvas">
+						<canvas id="canvas"></canvas>
+					</div>
+					<div id="div_chat">
+						<div id="chat_window"></div>
+						<div id="chat_textField">
+							<form action="input_text.htm">
+								<input id="newMessage" name="message" type="text" size="30" maxlength="30" />
+								<input type="submit" value="Send" />
+							</form>
+						</div>
+					</div>
+				</div>
+				<br />
+				<div id="div_controls">
+					<table id="keyTable">
+						<tr>
+							<td><img id="key_arrowLeft" src="img/keys/arrow-left.png" /></td>
+							<td><img id="key_space" src="img/keys/space.png" /></td>
+							<td><img id="key_arrowRight" src="img/keys/arrow-right.png" /></td>
+						</tr>
+						<tr>
+							<td><span id="runLeft"></span></td>
+							<td><span id="jump"></span></td>
+							<td><span id="runRight"></span></td>
+						</tr>
+					</table>
+					<div id="soundSelection">
+					  Sounds: <input type="checkbox" name="sound_bg" id="sound_bg" checked />Background | <input type="checkbox" name="sound_jump" id="sound_jump" checked />Jump | <input type="checkbox" name="sound_kill" id="sound_kill" checked />Kill | <input type="checkbox" name="sound_hit" id="sound_hit" checked />Hit
+					</div>
+				</div>
+				<br />
+				<div id="div_information">
+					<table id="scoreTable"></table>
+					<br />
+					<div id="scores"></div>
+				</div>
+				<div id="div_loading"></div>
+			</div>	
+		</center>
+		<div align="right">
+			Version 1.0.3 | by <a href="https://sites.google.com/site/calltopowersoftware/">CallToPower Software</a> | All rights reserved
+		</div>
+	</body>
+</html>
